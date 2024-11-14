@@ -1,0 +1,21 @@
+info:
+  contact: {}
+paths:
+  /hello:
+    get:
+      description: |-
+        This is a simple Hello World API with Swagger documentation
+        Get a Hello World message
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties:
+              type: string
+            type: object
+      summary: Get Hello message
+      tags:
+      - greetings
+swagger: "2.0"
